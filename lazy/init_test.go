@@ -101,11 +101,11 @@ func TestInit(t *testing.T) {
 
 		}(i)
 
-		wg.Wait()
-
 		c.Assert(result, qt.Equals, "root(1)|root(2)|branch_1|branch_1_1|branch_1_2|branch_1_2_1|")
 
 	}
+
+	wg.Wait()
 
 }
 
